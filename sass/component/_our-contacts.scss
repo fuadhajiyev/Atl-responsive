@@ -1,0 +1,39 @@
+.our-contacts{
+    padding: 5rem 0;
+    background-color: #fcfcfc;
+    background-position: center;
+    background-image: url(../img/bgn-grad.png);
+}
+
+
+.services-icons{
+
+    display: flex;
+    justify-content:center;
+    width:100%;
+    
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        color: $color-white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 1rem;
+
+        i{
+            background-color:$color-1; 
+            padding: 2rem;    
+            color: white; 
+            font-size: 2rem; 
+            transition: all .3s linear;
+         }
+
+         &:hover i{
+             background-color: $color-2;
+         }
+
+    }
+}

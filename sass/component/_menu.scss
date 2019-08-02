@@ -1,0 +1,117 @@
+.nav{
+    float: right;
+    @include respond(tab-land){
+        float: left; 
+    }
+    @include respond(phone){
+       display: none;
+       }
+
+    li{
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: white;
+        font-weight: 600;
+        display: inline-block;
+        margin-left:3rem; 
+        @include respond(tab-port){
+            margin-left: 1rem;
+
+        }
+       
+        a:hover{
+            color: $color-2;
+        }
+
+    }
+}
+
+
+.text-content{
+    padding: 11.2rem 0;
+    @include respond(tab-land){
+        padding-left: 10px;
+
+        }
+        @include respond(tab-port){
+          width: 100%;
+            }
+
+    .paragraf{
+        padding: 2rem 0;
+    
+    }
+    
+    
+    
+    &__item{
+        color: $color-white;
+
+        &--title{
+            color: $color-2;
+            position: relative;
+            padding-bottom: .5rem;
+
+
+            &::after{
+                content: "";
+                position: absolute;
+                 left: 0;
+                 bottom: 0;
+                width: 6rem;
+                height:.2rem;
+                background-color: $color-2;
+            
+
+            }
+        }
+
+    }
+
+    .btn{
+         font-size: 1.4rem;
+        padding: 4rem 0;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        display: flex;
+        @include respond(phone){
+            text-align: center;  
+        }
+        &-green{
+            background-color:$color-2;
+            color: $color-white;
+            margin-right: 2rem;
+            transition: all .3s;
+            padding: 2rem;
+        }
+
+        &-green:hover{
+            background-color:darken($color-2, 10);
+
+
+        }
+
+        &-white{
+            padding:2rem;
+            color: $color-black;
+            background-color: $color-white;
+
+
+        }
+    }
+
+}
+
+
+.navbar{
+
+    &__item{
+     font-size: 3rem;
+    color: $color-white;
+    visibility: hidden;
+    @include respond(phone){
+        visibility: visible;
+        }
+    }
+    
+}

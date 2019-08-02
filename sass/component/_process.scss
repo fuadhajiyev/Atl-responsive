@@ -1,0 +1,88 @@
+.process{
+    padding: 6rem 0;
+    background-color: #1d7871;
+    background-position: center;
+    background-image: url(../img/bgn-grad.png);
+    
+    .box-info{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color:white;
+            line-height: 1.7;
+            padding: 0 .5rem;
+
+            
+            &__item1{
+                font-size: 7rem;
+            }
+            &__item2{
+                // padding: 2rem 0;
+                font-size: 1.6rem;
+
+            }
+             
+             h3{
+                 font-size: 2.5rem;
+                 font-weight: 700;
+
+             }
+
+             p{
+                 font-size: 1.3rem;
+                 @include respond(tab-port){
+                   padding: 0 10rem;
+                }
+             }
+
+
+    }
+    
+}
+
+
+.process-text{
+    padding: 3rem 0;
+    text-align: center;
+    width: 100%;
+    color:white;
+
+  
+    &__thin{
+        text-transform: capitalize;
+        position: relative;
+        font-size: 3.5rem;
+        padding-bottom: 1.5rem;
+
+         
+        &::before{
+            content: "";
+            position: absolute;
+            width: 6rem;
+            height: .2rem;
+            left: 50%;
+            background-color: $color-white;
+            transform: translateX(-50%);
+            bottom: 0;
+            
+        }
+
+    }
+
+    &__bold{
+        font-weight: 700;
+    }
+
+    &__p{
+        font-size: 1.8rem;
+        display: inline-block;
+        padding: 0 15rem;
+        line-height: 1.7;
+        margin: 1rem 0;
+        @include respond(phone){
+           padding: 0 5rem;
+        }
+   
+    }
+
+}

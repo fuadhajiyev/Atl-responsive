@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: montserrat;
+    font-weight: 400;
+    //this is defines what 1 rem is
+    font-size: 62.5%; //1rem/16px = 62.5%
+    
+    @include respond(tab-land){
+        font-size: 65.25%; 
+
+    }//1 rem = 9px, 9/16 = 50% // width 1232
+    
+   @include respond(tab-port){
+       font-size: 55%; //1 rem = 8px, 8/16 = 50% 936px
+       overflow-x: hidden;
+   }
+   @include respond(phone){
+       font-size: 44%; //1 rem = 8px, 8/16 = 50% 900px
+   }
+
+   @include respond(big-desktop){
+       font-size: 85%; //1 rem = 12px, 12/16   1800px
+   
+    }
+ 
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}

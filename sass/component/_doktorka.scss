@@ -1,0 +1,61 @@
+.our-team{
+    background-image: url(../img/bg-office.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    .doktorka{
+            padding-top: 9rem;
+
+
+        &__img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+    .doctor-text{
+        color: #444;
+        padding-top: 10px;
+
+        .siqnature{
+            // width: 19rem;
+            padding-top: 1.6rem;
+
+
+            &__logo{
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .color-text{
+            color: $color-black;
+            padding: 3rem 0;
+            padding-top: 2rem;
+        }
+
+        .line{
+            position: relative;
+            padding-bottom: 2rem;
+
+            &::after{
+                content: "";
+                position: absolute;
+                 left: 0;
+                 bottom: 0;
+                width: 6rem;
+                height:.2rem;
+                background-color: $color-1;
+            }
+        
+        }
+        
+
+    }
+    
+}
